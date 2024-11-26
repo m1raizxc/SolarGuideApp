@@ -27,20 +27,23 @@
             align-items: center;
             flex-direction: column;
             text-align: center;
+            padding: 20px; /* Reduces padding for better spacing on smaller screens */
         }
 
         h1 {
             color: #333;
+            font-size: 2em;
         }
 
         p {
-            font-size: 1.2em;
+            font-size: 1em;
             color: #555;
+            margin: 10px 0;
         }
 
         .download-btn {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 15px 20px;
             background-color: #FDC35A; /* button color */
             color: white;
             text-decoration: none;
@@ -51,6 +54,42 @@
 
         .download-btn:hover {
             background-color: #e5a84d; /* darker shade on hover */
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            body {
+                background-image: url('https://github.com/m1raizxc/SolarGuideApp/blob/main/mobile-background-img.png?raw=true'); /* Mobile-specific background */
+                background-attachment: scroll; /* Ensures background scrolls with content */
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            .download-btn {
+                font-size: 0.9em;
+                padding: 12px 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.8em;
+            }
+
+            .download-btn {
+                font-size: 0.8em;
+                padding: 10px 15px;
+            }
         }
     </style>
 </head>
