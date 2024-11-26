@@ -5,25 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download SolarGuideApp</title>
     <style>
+        /* Reset margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style the body to ensure the background covers the full screen */
         body {
             font-family: Arial, sans-serif;
             background-image: url('https://github.com/m1raizxc/SolarGuideApp/blob/main/background-img.png?raw=true');
-
-'); /* Replace with your image URL */
             background-size: cover; /* Ensures the image covers the entire background */
             background-position: center; /* Centers the image */
             background-repeat: no-repeat; /* Prevents tiling */
             background-attachment: fixed; /* Makes the background image fixed while scrolling */
+            height: 100vh; /* Sets the height to 100% of the viewport */
+            width: 100%; /* Ensures the width is 100% */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             text-align: center;
-            padding: 50px;
         }
+
         h1 {
             color: #333;
         }
+
         p {
             font-size: 1.2em;
             color: #555;
         }
+
         .download-btn {
             display: inline-block;
             padding: 15px 30px;
@@ -34,6 +48,7 @@
             font-size: 1em;
             transition: background-color 0.3s;
         }
+
         .download-btn:hover {
             background-color: #e5a84d; /* darker shade on hover */
         }
